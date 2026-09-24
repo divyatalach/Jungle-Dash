@@ -1,0 +1,6 @@
+{
+  "name": "Jungle Dash",
+  "description": "An adventurous and colorful endless runner game through ancient jungle temples. Jump, slide, dodge obstacles, and collect gold coins!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Nunito', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    overflow: hidden;
+  }
+}
+
+/* Custom animations for UI popups and celebrations */
+@keyframes coinSparkle {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.15) rotate(15deg); }
+}
+
+@keyframes bannerBounce {
+  0% { transform: translateY(-50px) scale(0.8); opacity: 0; }
+  50% { transform: translateY(10px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.animate-coin-sparkle {
+  animation: coinSparkle 1.2s ease-in-out infinite;
+}
+
+.animate-banner-bounce {
+  animation: bannerBounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
